@@ -1,0 +1,72 @@
+/* Title.css */
+
+.image-container {
+  position: relative;
+  width: 100vw;
+  min-height: 45vw;
+}
+
+.image-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-image: url("./programming.jpg"); /* 이미지 경로를 적절히 설정하세요 */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.image-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  background-color: yellow;
+  padding: 0px 40px;
+}
+
+.image-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.image-description {
+  font-size: 8px;
+}
+
+@media (max-width: 768px) {
+  .image-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .image-description {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .image-description {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 769px) {
+  .image-title {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+
+  .image-description {
+    font-size: 16px;
+  }
+}

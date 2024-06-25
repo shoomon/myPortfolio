@@ -1,0 +1,21 @@
+.part-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 80px;
+}
+
+.part-title {
+  font-weight: bolder;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.part-detail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

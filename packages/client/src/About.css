@@ -1,0 +1,93 @@
+.about-row {
+  display: flex;
+  justify-content: center; /* 요소들을 수평 중앙 정렬합니다. */
+  width: 100%;
+}
+
+.about-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 내부 요소를 수직 중앙 정렬합니다. */
+  width: calc(45% - 10px); /* 각각의 요소가 45%를 차지하고 간격을 조절합니다. */
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.about-detail:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .about-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-detail {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+}
+
+.about-detail img {
+  width: 40px;
+  height: 40px;
+}
+
+.about-title,
+.about-content {
+  display: flex;
+  margin: 4px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333; /* 변경 가능 */
+}
+
+.about-content {
+  font-size: 16px;
+  color: #666; /* 변경 가능 */
+  margin-top: 5px; /* 간격 조절 가능 */
+}
+
+@media (max-width: 768px) {
+  .part-title {
+    font-size: 32px;
+  }
+
+  .about-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-detail {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .part-title {
+    font-size: 24px;
+  }
+
+  .about-detail div {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 769px) {
+  .part-title {
+    font-size: 48px;
+  }
+}
